@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voting Eligibility Checker</title>
+
+    <meta name="title" content="Voting Eligibility Checker">
+    <meta name="description"
+        content="The Voting Eligibility Checker app is a simple web application designed to determine if a user is eligible to vote based on their age. The user is prompted to enter their age, and upon submitting the form, the app performs a validation check. If the entered age is equal to or greater than 18, a message is displayed stating that the user is eligible to vote. Conversely, if the age is below 18, a message is displayed indicating that the user is not yet eligible to vote. The app provides a straightforward and intuitive interface, ensuring users can quickly and easily determine their voting eligibility status.">
+    <meta name="keywords" content="voting, eligibility, voting eligibility check, voting checker">
+    <meta name="image"
+        content="meta">
+
+    <!-- Open Graph general (Facebook, Pinterest) -->
+    <meta name="og:title" content="Voting Eligibility Checker">
+    <meta name="og:description"
+        content="The Voting Eligibility Checker app is a simple web application designed to determine if a user is eligible to vote based on their age. The user is prompted to enter their age, and upon submitting the form, the app performs a validation check. If the entered age is equal to or greater than 18, a message is displayed stating that the user is eligible to vote. Conversely, if the age is below 18, a message is displayed indicating that the user is not yet eligible to vote. The app provides a straightforward and intuitive interface, ensuring users can quickly and easily determine their voting eligibility status.">
+    <meta name="og:image"
+        content="meta">
+    <meta name="og:image:alt" content="Voting Eligibility Checker">
+    <meta name="og:site_name" content="Voting Eligibility Checker">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Voting Eligibility Checker">
+    <meta name="twitter:description"
+        content="The Voting Eligibility Checker app is a simple web application designed to determine if a user is eligible to vote based on their age. The user is prompted to enter their age, and upon submitting the form, the app performs a validation check. If the entered age is equal to or greater than 18, a message is displayed stating that the user is eligible to vote. Conversely, if the age is below 18, a message is displayed indicating that the user is not yet eligible to vote. The app provides a straightforward and intuitive interface, ensuring users can quickly and easily determine their voting eligibility status.">
+    <meta name="twitter:image:src"
+        content="meta">
+
+    <!-- Search Engine -->
+    <meta name="description"
+        content="The Voting Eligibility Checker app is a simple web application designed to determine if a user is eligible to vote based on their age. The user is prompted to enter their age, and upon submitting the form, the app performs a validation check. If the entered age is equal to or greater than 18, a message is displayed stating that the user is eligible to vote. Conversely, if the age is below 18, a message is displayed indicating that the user is not yet eligible to vote. The app provides a straightforward and intuitive interface, ensuring users can quickly and easily determine their voting eligibility status.">
+    <meta name="image"
+        content="meta">
+
+    <!-- Schema.org for Google -->
+    <meta itemprop="name" content="Voting Eligibility Checker">
+    <meta itemprop="description"
+        content="The Voting Eligibility Checker app is a simple web application designed to determine if a user is eligible to vote based on their age. The user is prompted to enter their age, and upon submitting the form, the app performs a validation check. If the entered age is equal to or greater than 18, a message is displayed stating that the user is eligible to vote. Conversely, if the age is below 18, a message is displayed indicating that the user is not yet eligible to vote. The app provides a straightforward and intuitive interface, ensuring users can quickly and easily determine their voting eligibility status.">
+    <meta itemprop="image"
+        content="meta">
+
+    <meta name="revisit-after" content="150 days">
+
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.17/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap');
+    </style>
+</head>
+
+<body class="bg-gray-100 grid place-content-center min-h-screen text-center"
+    style="font-family: 'Quicksand', sans-serif;">
+    <a href=""><img src="favicon.png" alt="Voting Eligibility Checker" class="mx-auto w-36 h-36 my-5 shadow-lg rounded-full"/></a>
+    <div class="bg-white p-3 rounded-xl shadow-lg px-5 mx-5">
+        <h1 class="text-2xl font-bold my-5">Voting Eligibility Checker</h1>
+        <label class="my-2" for="age">Enter your age:</label>
+        <input class="border border-gray-300 rounded px-3 py-2 my-3 w-full" type="number" id="age" name="age"
+            onkeyup="checkEligibility()" autofocus>
+        <button class="bg-black text-white py-2 px-4 rounded hover:bg-gray" onclick="checkEligibility()">Check
+            Eligibility</button>
+        <p id="result" class="mt-4 text-lg font-bold"></p>
+
+        <script src="script.js"></script>
+    </div>
+    <p class="mx-auto my-5">Made with <i class="fa-solid fa-heart text-red-600"></i> by <a
+            href="https://github.com/sdileep99" target="_blank"><strong
+                class="underline text-blue-600">S.Dileep</strong></a></p>
+</body>
+
+</html>
